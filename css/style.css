@@ -257,13 +257,22 @@ header .navbar .cta-btn a:hover {
   }
 }
 
+.titulo {
+  color: #f73471;
+  font-size: 3rem;
+ 
+  padding: 1rem;
+  border-radius: 10px;
+}
 .section-heading h2 {
   font-size: 50px;
+ 
+  
 }
 
 .section-heading .small-sub-heading {
   font-size: 14px;
-  color: #f73471;
+  
 }
 
 .blog .media h3 {
@@ -1348,4 +1357,8 @@ header .navbar .cta-btn a:hover {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px;
   }
+}
+
+.pago {
+  width: 100%;
 }

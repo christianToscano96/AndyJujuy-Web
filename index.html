@@ -19,6 +19,8 @@
 
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/smooth-scroll.min.js"></script>
+    
   </head>
   <body>
     
@@ -36,22 +38,24 @@
                 <a class="nav-link active" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">Sobre Mi</a>
+                <a  data-scroll class="nav-link" href="#1">Sobre Mi</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="services.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Productos</a>
+                <a  data-scroll href="#2" class="nav-link dropdown-toggle" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Productos</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown04">
-                  <a class="dropdown-item" href="services.html">Ropa Mujer</a>
-                  <a class="dropdown-item" href="services.html">Ropa Hombre</a>
-                  <a class="dropdown-item" href="services.html">Perfumes</a>
-                  <a class="dropdown-item" href="services.html">Zapatos Mujer</a>
-                  <a class="dropdown-item" href="services.html">Zapatos Hombre</a>
-                  <a class="dropdown-item" href="services.html">Variedad</a>
+                  <a class="dropdown-item" href="#">Ropa Mujer</a>
+                  <a class="dropdown-item" href="#">Ropa Hombre</a>
+                  <a class="dropdown-item" href="#">Perfumes</a>
+                  <a class="dropdown-item" href="#">Zapatos Mujer</a>
+                  <a class="dropdown-item" href="#">Zapatos Hombre</a>
+                  <a class="dropdown-item" href="#">Variedad</a>
                 </div>
               </li>
-              
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a  data-scroll class="nav-link" href="#4">Testimonios</a>
+              </li>
+              <li class="nav-item">
+                <a data-scroll class="nav-link" href="#5">Contacto</a>
               </li>
             </ul>
 
@@ -67,14 +71,17 @@
     </header>
     <!-- END header -->
     
+    
     <section class="home-slider owl-carousel">
       <div class="slider-item" style="background-image: url('img/slider-1.jpg');">
         
-        <div class="container">
-          <div class="row slider-text align-items-center justify-content-center">
-            <div class="col-md-8 text-center col-sm-12 element-animate">
-              <h1>Ropa Importada</h1>
-              <p class="mb-5">Rabajamos con las mejores Fabricas de Ropa Brasileras.</p>
+        <div class="  container">
+          <div class=" row slider-text align-items-center justify-content-center">
+            <div class=".bg-gradient-dark col-md-8 text-center col-sm-12 element-animate">
+              <h2 class="titulo">Ropa Importada</h2>
+              <p class="titulo mb-5">Rabajamos con las mejores Fabricas de Ropa Brasileras.</p>
+              <p><a data-scroll href="#1" class="btn btn-white btn-outline-white">Empezar</a> <a href="#" class="btn btn-link btn-white"></a></p>
+
             </div>
           </div>
         </div>
@@ -85,8 +92,10 @@
         <div class="container">
           <div class="row slider-text align-items-center justify-content-center">
             <div class="col-md-8 text-center col-sm-12 element-animate">
-              <h1>¡Envios Rapidos y Seguros!</h1>
-              <p class="mb-5">Muestras clientes nos recomiendan! Ante todo siempre la Confianza y Sinceridad.</p>
+              <h2 class="titulo">¡Envios Rapidos y Seguros!</h2>
+              <p class=" titulo mb-5">Muestras clientes nos recomiendan! Ante todo siempre la Confianza y Sinceridad.</p>
+              <p><a  data-scroll href="#1" class="btn btn-white btn-outline-white">Empezar</a> <a href="#" class="btn btn-link btn-white"></a></p>
+
             </div>
           </div>
         </div>
@@ -96,15 +105,42 @@
     </section>
     <!-- END slider -->
 
+    <section  id="1" class="section element-animate">
+      <div class="clearfix mb-5 pb-5">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12 text-center heading-wrap">
+              <h2>Sobre Mi</h2>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <p><img src="img/yo.jpg" alt="" class="img-fluid"></p>
+            
+          </div>
+          
+          <div class="col-lg-6 pl-2 pl-lg-5">
+            <h2 class="mb-5">Hola, soy Andrea!</h2>
+            <p>Soy una mujer que decidio emprender y asi tambien poder ayudar a muchas revendedoras a vender buenos productos y a un gran precio.</p>
+           
+          </div>
+        </div>
+      </div>
+
+    </section>
     
-    <section class="section element-animate">
+    <section id="2" class="section element-animate">
 
       <div class="clearfix mb-5 pb-5">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-12 text-center heading-wrap">
               <h2>Productos Destacados</h2>
-              <span class="back-text">destacados</span>
+              <span class="back-text"></span>
             </div>
           </div>
         </div>
@@ -121,35 +157,42 @@
         <a href="#" class="item-class">
           <div class="text">
             <p class="class-price">$30.99</p>
-            <h2 class="class-heading">Fitness Class Name Here</h2>
+            <h2 class="class-heading">Monito de Bengala</h2>
           </div>
-          <img src="img/img_2_square.jpg" alt="" class="img-fluid">
+          <img src="img/productos/ropamujer/r2.jpg" alt="" class="img-fluid">
         </a>
         <a href="#" class="item-class">
           <div class="text">
             <p class="class-price">$30.99</p>
-            <h2 class="class-heading">Fitness Class Name Here</h2>
+            <h2 class="class-heading">Monito de Bengala</h2>
           </div>
-          <img src="img/img_3_square.jpg" alt="" class="img-fluid">
+          <img src="img/productos/ropamujer/r3.jpg" alt="" class="img-fluid">
         </a>
         <a href="#" class="item-class">
           <div class="text">
             <p class="class-price">$30.99</p>
-            <h2 class="class-heading">Fitness Class Name Here</h2>
+            <h2 class="class-heading">Monito de Bengala</h2>
           </div>
-          <img src="img/img_4_square.jpg" alt="" class="img-fluid">
+          <img src="img/productos/ropamujer/r4.jpg" alt="" class="img-fluid">
+        </a>
+        <a href="#" class="item-class">
+          <div class="text">
+            <p class="class-price">$30.99</p>
+            <h2 class="class-heading">Monito de Bengala</h2>
+          </div>
+          <img src="img/productos/ropamujer/r5.jpg" alt="" class="img-fluid">
         </a>
       </div>
     </section> <!-- .section -->
 
-    <section class="section bg-light element-animate">
+    <section  class="section bg-light element-animate">
 
       <div class="clearfix mb-5 pb-5">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-12 text-center heading-wrap">
-              <h2>Our Schedule</h2>
-              <span class="back-text-dark">Schedule</span>
+              <h2>Nuestros Productos</h2>
+              <span  class="back-text-dark"></span>
             </div>
           </div>
         </div>
@@ -160,30 +203,28 @@
         <div class="row no-gutters">
           <div class="col-md-6">
             <div class="sched d-block d-lg-flex">
-              <div class="bg-image order-2" style="background-image: url('img/img_1_square.jpg');"></div>
+              <div class="bg-image order-2" style="background-image: url('img/productos/ropamujer/r10.jpg');"></div>
               <div class="text order-1">
-                <h3>Fitness Class Name Here</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo delectus...</p>
+                <h3>Indumantaria Mujer</h3>
+                <p>Las mejores marcas traidas desde Brasil para vestirte!...</p>
                 <p class="sched-time">
-                  <span><span class="fa fa-clock-o"></span> 5:30 PM</span> <br>
-                  <span><span class="fa fa-calendar"></span> April 22, 2018</span> <br>
+                 
                 </p>
-                <p><a href="#" class="btn btn-primary btn-sm">Join from $15</a></p>
+                <p><a href="#" class="btn btn-primary btn-sm">Desde $300</a></p>
                 
               </div>
               
             </div>
 
             <div class="sched d-block d-lg-flex">
-              <div class="bg-image" style="background-image: url('img/img_2_square.jpg');"></div>
+              <div class="bg-image" style="background-image: url('img/productos/zapah/z1.jpg');"></div>
               <div class="text">
-                <h3>Fitness Class Name Here</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo delectus...</p>
+                <h3>Indumentaria para Hombres</h3>
+                <p>Las mejores marcas traidas desde Brasil para vestirlos a ellos!...</p>
                 <p class="sched-time">
-                  <span><span class="fa fa-clock-o"></span> 5:30 PM</span> <br>
-                  <span><span class="fa fa-calendar"></span> April 22, 2018</span> <br>
+                
                 </p>
-                <p><a href="#" class="btn btn-primary btn-sm">Join from $15</a></p>
+                <p><a href="#" class="btn btn-primary btn-sm">Desde $400</a></p>
                 
               </div>
               
@@ -193,30 +234,28 @@
 
           <div class="col-md-6">
             <div class="sched d-block d-lg-flex">
-              <div class="bg-image order-2" style="background-image: url('img/img_4_square.jpg');"></div>
+              <div class="bg-image order-2" style="background-image: url('img/productos/varios/ant2.jpg');"></div>
               <div class="text order-1">
-                <h3>Fitness Class Name Here</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo delectus...</p>
+                <h3>Varios</h3>
+                <p>Encontra desde Anteojos y Perfumes...</p>
                 <p class="sched-time">
-                  <span><span class="fa fa-clock-o"></span> 5:30 PM</span> <br>
-                  <span><span class="fa fa-calendar"></span> April 22, 2018</span> <br>
+                 
                 </p>
-                <p><a href="#" class="btn btn-primary btn-sm">Join from $15</a></p>
+                <p><a href="#" class="btn btn-primary btn-sm">Desde $150</a></p>
                 
               </div>
               
             </div>
 
             <div class="sched d-block d-lg-flex">
-              <div class="bg-image" style="background-image: url('img/img_3_square.jpg');"></div>
+              <div class="bg-image" style="background-image: url('img/productos/zapam/z3.jpg');"></div>
               <div class="text">
-                <h3>Fitness Class Name Here</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo delectus...</p>
+                <h3>Calzados Mujer</h3>
+                <p>Encontra gran variedad y super precios!...</p>
                 <p class="sched-time">
-                  <span><span class="fa fa-clock-o"></span> 5:30 PM</span> <br>
-                  <span><span class="fa fa-calendar"></span> April 22, 2018</span> <br>
+                  
                 </p>
-                <p><a href="#" class="btn btn-primary btn-sm">Join from $15</a></p>
+                <p><a href="#" class="btn btn-primary btn-sm">Desde $750</a></p>
                 
               </div>
               
@@ -229,6 +268,12 @@
       </div>
 
     </section> <!-- .section -->
+
+
+
+
+    
+    
      
     <section class="section element-animate">
 
@@ -240,158 +285,158 @@
             <p class="class-price">$750</p>
             <h2 class="class-heading">Monito de Bengala</h2>
           </div>
-          <img src="img/img_1_square.jpg" alt="" class="img-fluid">
+          <img src="img/productos/zapam/z14.jpg" alt="" class="img-fluid">
         </a>
         <a href="#" class="item-class">
           <div class="text">
             <p class="class-price">$30.99</p>
-            <h2 class="class-heading">Fitness Class Name Here</h2>
+            <h2 class="class-heading">Monito de Bengala</h2>
           </div>
-          <img src="img/img_2_square.jpg" alt="" class="img-fluid">
+          <img src="img/productos/zapah/z5.jpg" alt="" class="img-fluid">
         </a>
         <a href="#" class="item-class">
           <div class="text">
             <p class="class-price">$30.99</p>
-            <h2 class="class-heading">Fitness Class Name Here</h2>
+            <h2 class="class-heading">Monito de Bengala</h2>
           </div>
-          <img src="img/img_3_square.jpg" alt="" class="img-fluid">
+          <img src="img/productos/zapah/z7.jpg" alt="" class="img-fluid">
         </a>
         <a href="#" class="item-class">
           <div class="text">
             <p class="class-price">$30.99</p>
-            <h2 class="class-heading">Fitness Class Name Here</h2>
+            <h2 class="class-heading">Monito de Bengala</h2>
           </div>
-          <img src="img/img_4_square.jpg" alt="" class="img-fluid">
+          <img src="img/productos/zapam/z7.jpg" alt="" class="img-fluid">
         </a>
       </div>
     </section> <!-- .section -->
 
-    <section class="section element-animate">
+    <section class="section bg-light element-animate">
 
-      <div class="clearfix mb-5 pb-5">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12 text-center heading-wrap">
-              <h2>Expert Trainers</h2>
-              <span class="back-text">Our Trainers</span>
-            </div>
-          </div>
-        </div>
-      </div>
-        <div class="container">
-          <div class="row">
-            <div class="major-caousel js-carousel-1 owl-carousel">
-              <div>
-                <div class="media d-block media-custom text-center">
-                  <a href="#"><img src="img/person_1.jpg" alt="Image Placeholder" class="img-fluid"></a>
-                  <div class="media-body">
-                    <h3 class="mt-0 text-black">Mellisa Howard</h3>
-                    <p class="lead">Gym Trainer</p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="media d-block media-custom text-center">
-                  <a href="#"><img src="img/person_2.jpg" alt="Image Placeholder" class="img-fluid"></a>
-                  <div class="media-body">
-                    <h3 class="mt-0 text-black">Mike Richardson</h3>
-                    <p class="lead">Gym Trainer</p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="media d-block media-custom text-center">
-                  <a href="#"><img src="img/person_3.jpg" alt="Image Placeholder" class="img-fluid"></a>
-                  <div class="media-body">
-                    <h3 class="mt-0 text-black">Charles White</h3>
-                    <p class="lead">Gym Trainer</p>
-                  </div>
-                </div>
-              </div>
-
-               <div>
-              <div class="media d-block media-custom text-center">
-                <a href="#"><img src="img/person_1.jpg" alt="Image Placeholder" class="img-fluid"></a>
-                <div class="media-body">
-                  <h3 class="mt-0 text-black">Mellisa Howard</h3>
-                  <p class="lead">Gym Trainer</p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="media d-block media-custom text-center">
-                <a href="#"><img src="img/person_2.jpg" alt="Image Placeholder" class="img-fluid"></a>
-                <div class="media-body">
-                  <h3 class="mt-0 text-black">Mike Richardson</h3>
-                  <p class="lead">Gym Trainer</p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="media d-block media-custom text-center">
-                <a href="#"><img src="img/person_3.jpg" alt="Image Placeholder" class="img-fluid"></a>
-                <div class="media-body">
-                  <h3 class="mt-0 text-black">Charles White</h3>
-                  <p class="lead">Gym Trainer</p>
-                </div>
-              </div>
-            </div>
-            
-              
-          </div>
-          <!-- END slider -->
-          </div>
-        </div>
-      
-    </section> <!-- .section -->
-
-    <section class="section element-animate">
-
-      <div class="clearfix mb-5 pb-5">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12 text-center heading-wrap">
-              <h2>Testimonial</h2>
-              <span class="back-text">Testimonial</span>
-            </div>
-          </div>
-        </div>
-      </div>
+     
 
       <div class="container">
+        
+        <div class="row no-gutters">
+          <div class="col-md-6">
+            <div class="sched d-block d-lg-flex">
+              <div class="bg-image order-2" style="background-image: url('img/productos/ropamujer/r10.jpg');"></div>
+              <div class="text order-1">
+                <h3>Indumantaria Mujer</h3>
+                <p>Las mejores marcas traidas desde Brasil para vestirte!...</p>
+                <p class="sched-time">
+                 
+                </p>
+                <p><a href="#" class="btn btn-primary btn-sm">Desde $300</a></p>
+                
+              </div>
+              
+            </div>
+
+            <div class="sched d-block d-lg-flex">
+              <div class="bg-image" style="background-image: url('img/productos/zapah/z1.jpg');"></div>
+              <div class="text">
+                <h3>Indumentaria para Hombres</h3>
+                <p>Las mejores marcas traidas desde Brasil para vestirlos a ellos!...</p>
+                <p class="sched-time">
+                
+                </p>
+                <p><a href="#" class="btn btn-primary btn-sm">Desde $400</a></p>
+                
+              </div>
+              
+            </div>
+
+          </div>
+
+          <div class="col-md-6">
+            <div class="sched d-block d-lg-flex">
+              <div class="bg-image order-2" style="background-image: url('img/productos/varios/ant2.jpg');"></div>
+              <div class="text order-1">
+                <h3>Varios</h3>
+                <p>Encontra desde Anteojos y Perfumes...</p>
+                <p class="sched-time">
+                 
+                </p>
+                <p><a href="#" class="btn btn-primary btn-sm">Desde $150</a></p>
+                
+              </div>
+              
+            </div>
+
+            <div class="sched d-block d-lg-flex">
+              <div class="bg-image" style="background-image: url('img/productos/zapam/z3.jpg');"></div>
+              <div class="text">
+                <h3>Calzados Mujer</h3>
+                <p>Encontra gran variedad y super precios!...</p>
+                <p class="sched-time">
+                  
+                </p>
+                <p><a href="#" class="btn btn-primary btn-sm">Desde $750</a></p>
+                
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+        
+
+      </div>
+
+    </section> <!-- .section -->
+    
+
+
+    <section class="section element-animate">
+
+      <div class="clearfix mb-5 pb-5">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12 text-center heading-wrap">
+              <h2>Testimonios De Clientes</h2>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="4" class="container">
         <div class="row">
           <div class="col-md-4">
             <blockquote class="testimonial">
-              <p>&ldquo; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, obcaecati? Quis eum minus, sequi atque quisquam ducimus aliquam veritatis nobis cum iusto neque enim explicabo maxime natus doloribus, fuga sunt. &rdquo;</p>
+              <p>&ldquo; Hermosa ropa de calidad , entrega siempre muy presentable . muy recomendable todo! 😍. &rdquo;</p>
               <div class="d-flex author">
                 <img src="img/person_1.jpg" alt="" class="mr-4">
                 <div class="author-info">
-                  <h4>Mellisa Howard</h4>
-                  <p>CEO, XYZ Company</p>
+                  <h4>Cintia Herrera</h4>
+                 
                 </div>
               </div>  
             </blockquote>
           </div>
           <div class="col-md-4">
             <blockquote class="testimonial">
-              <p>&ldquo; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, obcaecati? Quis eum minus, sequi atque quisquam ducimus aliquam veritatis nobis cum iusto neque enim explicabo maxime natus doloribus, fuga sunt. &rdquo;</p>
+              <p>&ldquo; Todo Me llego en tiempo muy buena calidad de la ropa💞
+                se los recomiendo💞. &rdquo;</p>
               <div class="d-flex author">
                 <img src="img/person_2.jpg" alt="" class="mr-4">
                 <div class="author-info">
-                  <h4>Mike Richardson</h4>
-                  <p>CEO, XYZ Company</p>
+                  <h4>Georgina Cruz</h4>
+                  
                 </div>
               </div>  
             </blockquote>
           </div>
           <div class="col-md-4">
             <blockquote class="testimonial">
-              <p>&ldquo; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, obcaecati? Quis eum minus, sequi atque quisquam ducimus aliquam veritatis nobis cum iusto neque enim explicabo maxime natus doloribus, fuga sunt. &rdquo;</p>
+              <p>&ldquo; Muy linda ropas y la entrega en tiempo y forma les recomiendo y una hermosa atención. &rdquo;</p>
               <div class="d-flex author">
                 <img src="img/person_3.jpg" alt="" class="mr-4">
                 <div class="author-info">
-                  <h4>Charles White</h4>
-                  <p>CEO, XYZ Company</p>
+                  <h4>Liliana Maria Del Valle Lopez</h4>
+                  
                 </div>
               </div>  
             </blockquote>
@@ -400,13 +445,14 @@
       </div>
     </section> <!-- .section -->
 
+   
+    
     <section class="section element-animate">
       <div class="clearfix mb-5 pb-5">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-12 text-center heading-wrap">
-              <h2>Blog</h2>
-              <span class="back-text">Our Blog</span>
+              <h2>Envios</h2>             
             </div>
           </div>
         </div>
@@ -416,32 +462,28 @@
         <div class="row">
           <div class="col-md-6">
             <div class="blog d-block d-lg-flex">
-              <div class="bg-image" style="background-image: url('img/img_2_square.jpg');"></div>
+              <div class="bg-image" style="background-image: url('img/aporte2.jpg');"></div>
               <div class="text">
-                <h3>Fitness Class Name Here</h3>
+                <h3>A la Rioja</h3>
                 <p class="sched-time">
-                  <span><span class="fa fa-calendar"></span> April 22, 2018</span> <br>
+                  <span><span class="fa fa-calendar"></span> Enero 15, 2019</span> <br>
                 </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo delectus...</p>
-                
-                <p><a href="#" class="btn btn-primary btn-sm">Read More</a></p>
-                
+                <p>Envios rapidos y seguros. Se fue a La Rioja!...</p>
+              
               </div>
               
             </div>
           </div>
           <div class="col-md-6">
             <div class="blog d-block d-lg-flex">
-              <div class="bg-image" style="background-image: url('img/img_2_square.jpg');"></div>
+              <div class="bg-image" style="background-image: url('img/aporte.jpg');"></div>
               <div class="text">
-                <h3>Fitness Class Name Here</h3>
+                <h3>Productos Enviados a Cordoba</h3>
                 <p class="sched-time">
-                  <span><span class="fa fa-calendar"></span> April 22, 2018</span> <br>
+                  <span><span class="fa fa-calendar"></span> Enero 22, 2019</span> <br>
                 </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo delectus...</p>
-                
-                <p><a href="#" class="btn btn-primary btn-sm">Read More</a></p>
-                
+                <p>Otra clienta satisfecha!!...</p>
+                         
               </div>
               
             </div>
@@ -450,57 +492,52 @@
       </div>
 
     </section> <!-- .section -->
-
+    <section class="container">
+      <img src="img/pago.jpg" class="pago" alt="">
+    </section>
     
     
 
 
-    <footer class="site-footer" role="contentinfo">
+    <footer id="5" class="site-footer" role="contentinfo">
       <div class="container">
         <div class="row mb-5">
           <div class="col-md-4 mb-5">
-            <h3>About Us</h3>
-            <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus et dolor blanditiis consequuntur ex voluptates perspiciatis omnis unde minima expedita.</p>
+            <h3>Sobre Mi:</h3>
+            <p class="mb-5">Soy una mujer que decidio emprender y asi tambien poder ayudar a muchas revendedoras a vender buenos productos y a un gran precio.</p>
             <ul class="list-unstyled footer-link d-flex footer-social">
-              <li><a href="#" class="p-2"><span class="fa fa-twitter"></span></a></li>
-              <li><a href="#" class="p-2"><span class="fa fa-facebook"></span></a></li>
-              <li><a href="#" class="p-2"><span class="fa fa-linkedin"></span></a></li>
-              <li><a href="#" class="p-2"><span class="fa fa-instagram"></span></a></li>
+              <li><a href="tel:+54 3886 44-3483" class="p-2"><span class="fa fa-whatsapp"></span></a></li>
+              <li><a href="https://www.facebook.com/Instagram-JUJUY-628662604249628/" target="_blanck" class="p-2"><span class="fa fa-facebook"></span></a></li>
+              <li><a href="https://www.instagram.com/familitoscano/" target="_blanck" class="p-2"><span class="fa fa-instagram"></span></a></li>
             </ul>
 
           </div>
           <div class="col-md-5 mb-5">
-            <h3>Contact Info</h3>
+            <h3> Información de Contacto</h3>
             <ul class="list-unstyled footer-link">
               <li class="d-block">
-                <span class="d-block">Address:</span>
-                <span class="text-white">34 Street Name, City Name Here, United States</span></li>
-              <li class="d-block"><span class="d-block">Telephone:</span><span class="text-white">+1 242 4942 290</span></li>
+                <span class="d-block">Lugar:</span>
+                <span class="text-white"> Ledesma - Jujuy - Argentina</span></li>
+              <li class="d-block"><span class="d-block" >Celular:</span><span class="text-white">+54 3886 44-3483</span></li>
               <li class="d-block"><span class="d-block">Email:</span><span class="text-white">info@yourdomain.com</span></li>
             </ul>
           </div>
-          <div class="col-md-3 mb-5">
-            <h3>Quick Links</h3>
-            <ul class="list-unstyled footer-link">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Terms of Use</a></li>
-              <li><a href="#">Disclaimers</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
+          
           
           </div>
         </div>
         <div class="row">
           <div class="col-12 text-md-center text-left">
             <p>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> <br> Demo Images Unsplash</p>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos Reservados | Esta Pagína fue hecha -<i class="fa fa-heart-o" aria-hidden="true"></i>- por <a href="https://christoscano.000webhostapp.com/christoscano/" target="_blank">ChrisToscano.com</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> <br> Las imagenes son proporcionadas por el Proveedor</p>
           </div>
         </div>
       </div>
     </footer>
+    <!-- END footer -->
+
+  
     <!-- END footer -->
 
     <!-- loader -->
@@ -517,5 +554,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     
 
     <script src="js/main.js"></script>
+
+    <!-- JQuery -->
+
+<!-- Bootstrap tooltips -->
+
+<!-- Bootstrap core JavaScript -->
+
+<!-- MDB core JavaScript -->
+
   </body>
 </html>
